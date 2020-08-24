@@ -9,7 +9,7 @@ import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [AppComponent, PostComponent],
-  imports: [BrowserModule, HttpClientModule, ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })],
+  imports: [BrowserModule, HttpClientModule, ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production })],
   providers: [],
   bootstrap: [AppComponent]
 })
